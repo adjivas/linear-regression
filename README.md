@@ -8,8 +8,8 @@
 [docs]: https://adjivas.github.io/linear-regression/linear_regression/
 [travis-badge]: https://travis-ci.org/adjivas/linear_regression.svg?branch=master&style=flat-square
 [travis]: https://travis-ci.org/adjivas/linear_regression
-[coverage-badge]: https://coveralls.io/repos/github/adjivas/linear_regression/badge.svg?branch=master&style=flat-square
-[coverage]: https://coveralls.io/github/adjivas/linear_regression?branch=master
+[coverage-badge]: https://coveralls.io/repos/github/adjivas/linear-regression/badge.svg?branch=master&style=flat-square
+[coverage]: https://coveralls.io/github/adjivas/linear-regression?branch=master
 
 #### License:
 **linear_regression**'s code in this repo is licensed under either of:
