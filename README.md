@@ -5,7 +5,7 @@
 [license-badge]: https://img.shields.io/crates/l/cublas.svg?style=flat-square
 [license]: https://github.com/adjivas/linear_regression/blob/master/README.md#license
 [docs-badge]: https://img.shields.io/badge/API-docs-blue.svg?style=flat-square
-[docs]: http://adjivas.github.io/linear_regression/linear_regression
+[docs]: https://adjivas.github.io/linear-regression/linear_regression/
 [travis-badge]: https://travis-ci.org/adjivas/linear_regression.svg?branch=master&style=flat-square
 [travis]: https://travis-ci.org/adjivas/linear_regression
 [coverage-badge]: https://coveralls.io/repos/github/adjivas/linear_regression/badge.svg?branch=master&style=flat-square
