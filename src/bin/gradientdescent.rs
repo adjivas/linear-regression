@@ -5,6 +5,12 @@
 // This file may not be copied, modified, or distributed
 // except according to those terms.
 
+extern crate linear_regression;
+
 fn main () {
-  println!("{}", "visualizedata");
+  let mut store = linear_regression::save::Store::new("Save.toml").unwrap();
+
+  println!("{:?}", store.set_one(55));
+  println!("{:?}", store.get());
+  println!("{}", store);
 }

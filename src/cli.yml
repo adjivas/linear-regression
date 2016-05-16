@@ -1,0 +1,18 @@
+# This file describe the command line interface options
+name: Linear-regression
+about: regression is an approach for modeling the relationship between a scalar dependent variable y and one
+version: 0.1
+author: adjivas <adjivas@users.noreply.github.com>
+
+args:
+  - input:
+      help: Defines the list files of input.
+      short: i
+      long: input
+      multiple: true
+      takes_value: true
+  - save:
+      help: Defines the file of save.
+      short: s
+      long: save
+      takes_value: true

@@ -6,18 +6,28 @@ description = ""
 documentation = "https://adjivas.github.io/linear_regression"
 repository = "https://github.com/adjivas/linear_regression.git"
 readme = "README.md"
-keywords = ["visualize", "linear", "regression"]
+keywords = ["gradient", "descent", "linear", "regression"]
 license = "MIT OR Apache-2.0"
-
-[[bin]]
-name = "visualizedata"
-path = "src/bin/visualizedata.rs"
-doc = false
 
 [[bin]]
 name = "linearfunction"
 path = "src/bin/linearfunction.rs"
 doc = false
 
+[[bin]]
+name = "gradientdescent"
+path = "src/bin/gradientdescent.rs"
+doc = false
+
 [features]
 unstable = [] # for travis-cargo
+
+[dependencies.csv]
+version = "0.14"
+
+[dependencies.toml]
+version = "0.1"
+
+[dependencies.clap]
+version = "2.5.1"
+features = ["yaml", "suggestions", "color"]
