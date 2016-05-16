@@ -15,3 +15,8 @@ args:
       short: o
       long: theta-one
       takes_value: true
+  - mileage:
+      help: Defines the Mileage.
+      short: m
+      long: mileage
+      takes_value: true

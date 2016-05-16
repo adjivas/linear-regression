@@ -3,11 +3,11 @@
 [![travis-badge][]][travis] [![coverage-badge][]][coverage] [![docs-badge][]][docs] [![license-badge][]][license]
 
 [license-badge]: https://img.shields.io/crates/l/cublas.svg?style=flat-square
-[license]: https://github.com/adjivas/linear_regression/blob/master/README.md#license
+[license]: https://github.com/adjivas/linear-regression/blob/master/README.md#license
 [docs-badge]: https://img.shields.io/badge/API-docs-blue.svg?style=flat-square
 [docs]: https://adjivas.github.io/linear-regression/linear_regression/
-[travis-badge]: https://travis-ci.org/adjivas/linear_regression.svg?branch=master&style=flat-square
-[travis]: https://travis-ci.org/adjivas/linear_regression
+[travis-badge]: https://travis-ci.org/adjivas/linear-regression.svg?branch=master&style=flat-square
+[travis]: https://travis-ci.org/adjivas/linear-regression
 [coverage-badge]: https://coveralls.io/repos/github/adjivas/linear-regression/badge.svg?branch=master&style=flat-square
 [coverage]: https://coveralls.io/github/adjivas/linear-regression?branch=master
 
@@ -18,8 +18,8 @@ uses the [APACHE][license-mit] and [MIT][license-apache] license.
  * Apache License, Version 2.0, ([LICENSE-APACHE](LICENSE-APACHE) or http://www.apache.org/licenses/LICENSE-2.0).
  * MIT license ([LICENSE-MIT](LICENSE-MIT) or http://opensource.org/licenses/MIT).
 
-[license-apache]: https://github.com/adjivas/linear_regression/blob/master/LICENSE-APACHE
-[license-mit]: https://github.com/adjivas/linear_regression/blob/master/LICENSE-MIT
+[license-apache]: https://github.com/adjivas/linear-regression/blob/master/LICENSE-APACHE
+[license-mit]: https://github.com/adjivas/linear-regression/blob/master/LICENSE-MIT
 
 at your option.
 

@@ -3,20 +3,20 @@ name = "linear_regression"
 version = "0.0.1"
 authors = ["adjivas <adjivas@users.noreply.github.com>"]
 description = ""
-documentation = "https://adjivas.github.io/linear_regression"
-repository = "https://github.com/adjivas/linear_regression.git"
+documentation = "https://adjivas.github.io/linear-regression"
+repository = "https://github.com/adjivas/linear-regression.git"
 readme = "README.md"
 keywords = ["gradient", "descent", "linear", "regression"]
 license = "MIT OR Apache-2.0"
 
 [[bin]]
-name = "linearfunction"
-path = "src/bin/linearfunction.rs"
+name = "estimate_price"
+path = "src/bin/estimate_price.rs"
 doc = false
 
 [[bin]]
-name = "gradientdescent"
-path = "src/bin/gradientdescent.rs"
+name = "learning_rate"
+path = "src/bin/learning_rate.rs"
 doc = false
 
 [features]

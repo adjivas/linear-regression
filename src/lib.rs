@@ -16,4 +16,5 @@
 //! [travis-badge]: https://travis-ci.org/adjivas/linear-regression.svg?branch=master&style=flat-square
 //! [travis]: https://travis-ci.org/adjivas/linear-regression
 
-pub mod save; // Storage interface.
+pub mod formula;
+pub mod save;

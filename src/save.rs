@@ -8,12 +8,16 @@
 extern crate std;
 extern crate toml;
 
-use std::io::Read;
-use std::io::Write;
+use std::io::{
+  Seek,
+  Read,
+  Write,
+};
 
 /// The `Store` stucture is an toml interface of save.
 
 pub struct Store {
+  writted: bool,
   source: std::fs::File,
   toml: toml::Value,
 }
@@ -33,7 +37,9 @@ impl Store {
     );
 
     try!(source.read_to_string(&mut buff));
+
     Ok(Store {
+      writted: false,
       source: source,
       toml: buff.parse().unwrap(),
     })
@@ -62,6 +68,7 @@ impl Store {
     &mut self,
     zero: i64,
   ) -> Option<()> {
+    self.writted = true;
     match self.toml.lookup_mut("Theta.zero") {
       Some(z) => Some(*z = toml::Value::Integer(zero)),
       None => None,
@@ -74,6 +81,7 @@ impl Store {
     &mut self,
     one: i64,
   ) -> Option<()> {
+    self.writted = true;
     match self.toml.lookup_mut("Theta.one") {
       Some(o) => Some(*o = toml::Value::Integer(one)),
       None => None,
@@ -89,10 +97,12 @@ impl Drop for Store {
   fn drop (
     &mut self,
   ) {
-    self.source.set_len(0);
-    self.source.write (
-      &format!("{}", self.toml).into_bytes()[..]
-    );
+    if self.writted {
+      self.source.seek(std::io::SeekFrom::Start(0)).ok().unwrap();
+      self.source.write_all (
+        &format!("{}", self.toml).into_bytes()[..]
+      ).ok().unwrap();
+    }
   }
 }
 

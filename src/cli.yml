@@ -9,7 +9,6 @@ args:
       help: Defines the list files of input.
       short: i
       long: input
-      multiple: true
       takes_value: true
   - save:
       help: Defines the file of save.
