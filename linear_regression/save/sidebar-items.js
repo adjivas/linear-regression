@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["Store","The `Store` stucture is an toml interface of save."]]});
