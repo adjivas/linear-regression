@@ -37,7 +37,6 @@ impl Store {
     );
 
     try!(source.read_to_string(&mut buff));
-
     Ok(Store {
       writted: false,
       source: source,
