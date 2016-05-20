@@ -20,3 +20,8 @@ args:
       short: m
       long: mileage
       takes_value: true
+  - input:
+      help: Defines the Input.
+      short: i
+      long: input
+      takes_value: true

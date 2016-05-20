@@ -6,3 +6,4 @@
 // except according to those terms.
 
 pub mod estimate_price;
+pub mod learning_rate;
